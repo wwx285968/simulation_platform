@@ -1,10 +1,9 @@
-from abc import abstractmethod
-import time
 import threading
+import time
+from abc import abstractmethod
 
 
 class SimulationTaskBase(threading.Thread):
-
     def __init__(self):
         self.is_stop = False
         super().__init__()
