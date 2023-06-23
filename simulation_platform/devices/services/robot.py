@@ -1,7 +1,8 @@
 from simulation_platform.devices.entities.robot import Battery, Chassis
+from simulation_platform.lib.device_base import Device
 
 
-class Robot:
+class Robot(Device):
     def __init__(
         self, robot_id: str, chassis: Chassis = Chassis(), battery: Battery = Battery()
     ) -> None:
@@ -18,5 +19,5 @@ class Robot:
     def update_location(self):
         pass
 
-    def update_robot_status(self):
-        pass
+    def report_state(self) -> dict:
+        return self.chassis.dict() | self.battery.dict()
