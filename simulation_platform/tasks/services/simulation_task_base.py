@@ -1,3 +1,4 @@
+from abc import abstractmethod
 import time
 import threading
 
@@ -11,6 +12,7 @@ class SimulationTaskBase(threading.Thread):
     def start_env(self):
         pass
 
+    @abstractmethod
     def config_simulation_task(self):
         pass
 
@@ -21,5 +23,8 @@ class SimulationTaskBase(threading.Thread):
         self.is_stop = True
 
     def run(self):
+        self.start_env()
+        self.config_simulation_task()
+
         while not self.is_stop:
             self.update_task_status()

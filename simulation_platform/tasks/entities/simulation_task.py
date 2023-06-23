@@ -1,12 +1,12 @@
 from dataclasses import dataclass, field
 from datetime import datetime
 
-from simulation_platform.tasks.entities import Entity
+from simulation_platform.lib.entity_base import Entity
 
 
 @dataclass
 class SimulationTask(Entity):
-    id: int
+    id: str
     name: str
     simulation_type: str
     task_type: str
