@@ -1,7 +1,11 @@
 from abc import ABC, abstractmethod
 
 
-class Device(ABC):
+class Commucation(ABC):
+    @abstractmethod
+    def receive_cmd(self):
+        pass
+
     @abstractmethod
     def report_state(self):
         pass
