@@ -4,7 +4,7 @@ from simulation_platform.devices.entities.robot import Battery, Chassis
 from simulation_platform.devices.communication.base import Commucation
 
 
-class Robot(Thread):
+class RobotSimulation(Thread):
     def __init__(
         self,
         robot_id: str,

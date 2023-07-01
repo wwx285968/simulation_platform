@@ -11,5 +11,8 @@ class SimulationTaskUseCases:
     def create_simulation_task(self, simulation_task: SimulationTask):
         pass
 
+    def delete_simulation_task(self, task_id: str):
+        pass
+
     def start_simulation_task(task_id: str):
         pass
