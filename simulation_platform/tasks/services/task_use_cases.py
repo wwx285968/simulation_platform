@@ -1,4 +1,4 @@
-from simulation_platform.tasks.entities.simulation_task import SimulationTask
+from tasks.entities.simulation_task import SimulationTask
 
 
 class SimulationTaskUseCases:

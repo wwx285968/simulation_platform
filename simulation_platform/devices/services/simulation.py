@@ -1,7 +1,7 @@
 from threading import Thread
 import time
-from simulation_platform.devices.entities.robot import Battery, Chassis
-from simulation_platform.devices.communication.base import Commucation
+from devices.entities.robot import Battery, Chassis
+from devices.communication.base import Commucation
 
 
 class RobotSimulation(Thread):

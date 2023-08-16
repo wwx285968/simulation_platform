@@ -1,7 +1,7 @@
 from dataclasses import dataclass, field
 from datetime import datetime
 
-from simulation_platform.lib.entity_base import Entity
+from lib.entity_base import Entity
 
 
 @dataclass

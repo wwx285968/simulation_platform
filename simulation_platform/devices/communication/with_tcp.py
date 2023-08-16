@@ -1,7 +1,7 @@
 import socket
 import select
 
-from simulation_platform.devices.communication.base import Commucation
+from devices.communication.base import Commucation
 
 
 class TcpComm(Commucation):

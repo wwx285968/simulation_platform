@@ -1,5 +1,5 @@
 import uvicorn
-from simulation_platform.apis.restful_api import app
+from apis.restful_api import app
 
 
 def main():

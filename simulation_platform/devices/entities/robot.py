@@ -1,6 +1,6 @@
 from dataclasses import dataclass
 
-from simulation_platform.lib.entity_base import Entity
+from lib.entity_base import Entity
 
 
 @dataclass
