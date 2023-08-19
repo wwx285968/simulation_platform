@@ -1,6 +1,6 @@
-from threading import Thread
 import time
 from abc import abstractmethod
+from threading import Thread
 
 
 class SimulationTaskBase(Thread):
